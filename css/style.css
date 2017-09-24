@@ -1,0 +1,263 @@
+blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+abbr, acronym, fieldset, img {
+    border: 0;
+}
+input {
+    border: 1px solid #b0b0b0;
+    padding: 3px 5px 4px;
+    color: #979797;
+    width: 190px;
+}
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: 400;
+}
+ol, ul {
+    list-style: none;
+}
+caption, th {
+    text-align: left;
+}
+.gallery a, .intro-block, .our-value .container>h2, .text-center, .v-middle-inner, .we-promo-with-bg h2 {
+    text-align: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: 400;
+}
+q:after, q:before {
+    content: ''}
+* {
+    box-sizing: border-box;
+    outline: 0;
+    letter-spacing: .2px;
+    font-family: 'Futura Md BT' !important;
+}
+
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url('../fonts/FuturaBT-Medium.eot');
+    src: url('../fonts/FuturaBT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Medium.woff') format('woff'),
+        url('../fonts/FuturaBT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 150px;
+    background: #000;
+    text-align: center;
+    display: table;
+}
+header h1 {
+	font-size: 60px;
+    color: #ffffff;
+    display: table-cell;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: 'Futura Md BT';
+}
+
+/* information-form */
+.form-wrap {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.form-wrap input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ff0000;
+    padding: 35px 10px 9px;
+    font-size: 12px;
+}
+.form-wrap input[type="text"]::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cccccc;
+}
+.form-wrap input[type="text"]::-moz-placeholder { /* Firefox 19+ */
+  color: #cccccc;
+}
+.form-wrap input[type="text"]:-ms-input-placeholder { /* IE 10+ */
+  color: #cccccc;
+}
+.form-wrap input[type="text"]:-moz-placeholder { /* Firefox 18- */
+  color: #cccccc;
+}
+.gender {
+    width: 100%;
+    float: left;
+    margin: 50px 0;
+}
+.gender input[type="radio"] {
+    display: none;
+}
+.gender input[type='radio'] + label {
+    width: 200px;
+    float: left;
+    font-size: 12px;
+    border: 1px solid #ff0000;
+    border-radius: 10px;
+    padding: 16.5px 0;
+    color: #cccccc;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+#radio2 + label {
+    float: right;
+}
+.gender input[type='radio']:checked + label {
+	background: #ff0000;
+}
+.gender label:hover {
+	background: #ff0000;
+}
+button {
+    width: 100%;
+    height: 100px;
+    background: #ccc;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Form submitted content */
+.submitted-content {
+    width: 80%;
+    border: 1px solid #ff0000;
+    min-height: 200px;
+    margin: 50px auto 50px;
+    border-radius: 10px;
+    font-size: 10px;
+    overflow: hidden;
+}
+.submitted-content table {
+    width: 100%;   
+}
+.submitted-content table thead {
+	border-bottom: 1px solid #ff0000;
+}
+.submitted-content table thead th {
+    padding: 15px 0;
+    text-align: center;
+}
+.submitted-content table tbody tr {
+    border-bottom: 1px solid #ff0000;
+}
+.submitted-content table tbody tr:last-child {
+    border-bottom: none;
+}
+.submitted-content table tbody td {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* API content */
+.api-content {
+    width: 80%;
+    border: 1px solid #ff0000;
+    min-height: 200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 10px;
+}
+.api-content h2.content-heading {
+    text-align: center;
+    font-size: 20px;
+    background: #cccccc;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.api-content .inner-content {
+    padding: 20px;
+}
+
+
+/* Media Query for responsive */
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+     header {
+        height: 130px;
+    }
+    header h1 {
+        font-size: 42px;
+    }
+    .gender {
+        margin: 30px 0;
+    }
+    .gender input[type='radio'] + label {
+        width: calc(50% - 5px);
+        padding: 12px 0;
+    }
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .submitted-content,
+    .api-content {
+        margin: 30px auto;
+        width: calc(100% - 40px);
+    }
+    .api-content h2.content-heading {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .api-content .inner-content {
+        padding: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        height: 80px;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    .gender {
+        margin: 30px 0;
+    }
+    .gender input[type='radio'] + label {
+        width: calc(50% - 5px);
+        padding: 12px 0;
+    }
+    button {
+        width: 100%;
+        height: 50px;
+        font-size: 18px;
+    }
+    .submitted-content,
+    .api-content {
+        margin: 30px auto;
+        width: calc(100% - 40px);
+    }
+    .api-content h2.content-heading {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    .api-content .inner-content {
+        padding: 12px;
+    }
+}

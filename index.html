@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suntist API Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1>Suntist</h1>
+		</header>
+		<div class="form-wrap">
+			<form>
+				<input id="name" type="text" name="Enter your name" placeholder="Enter your name" />
+				<input id="age" type="text" name="Enter your age" placeholder="Enter your age" />
+				<div class="gender">
+					<input type="radio" id="radio1" name="gender" value="male">
+					<label for="radio1">Male</label>
+	  				<input type="radio" id="radio2" name="gender" value="female">
+	  				<label for="radio2">Female</label>
+				</div>
+				<button id="submit" type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="submitted-content">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>age</th>
+						<th>sex</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+		<div class="api-content">
+			<h2 class="content-heading"></h2>
+			<div class="inner-content">
+				<p></p>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
